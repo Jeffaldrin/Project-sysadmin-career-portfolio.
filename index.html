@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student portfolio introducing the System Administrator profession, responsibilities, skills, and tools.">
+  <title>System Administrator | Career Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scanline" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="SysAdmin portfolio home">
+      <span class="brand-mark">$_</span>
+      <span>sysadmin<span class="brand-muted">.portfolio</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#roles" class="nav-link">Responsibilities</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#tools" class="nav-link">Tools</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SYSTEM ADMINISTRATION / CAREER GUIDE</p>
+        <h1>Keeping systems<br>running <span class="accent">smoothly.</span></h1>
+        <p class="hero-description">Explore the work behind reliable computer systems, secure networks, and the technology people depend on every day.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#roles">Explore the role <span aria-hidden="true">↘</span></a>
+          <a class="button button-ghost" href="#tools">View the toolkit</a>
+        </div>
+        <div class="terminal-card" aria-label="Terminal example">
+          <div class="terminal-top"><span></span><span></span><span></span><small>admin@portfolio: ~</small></div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">admin@server:~$</span> systemctl status services</p>
+            <p class="terminal-success">● services.service — System services</p>
+            <p class="terminal-dim">Loaded: loaded · Active: <span>active (running)</span></p>
+            <p><span class="terminal-prompt">admin@server:~$</span> <i class="cursor"></i></p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="server-rack">
+          <div class="rack-top"><span>SERVER NODE 01</span><span class="rack-light"></span></div>
+          <div class="server-unit"><span class="unit-icon">▤</span><div class="unit-lines"><i></i><i></i><i></i></div><span class="unit-status"></span></div>
+          <div class="server-unit"><span class="unit-icon">▤</span><div class="unit-lines"><i></i><i></i><i></i></div><span class="unit-status"></span></div>
+          <div class="server-unit"><span class="unit-icon">▤</span><div class="unit-lines"><i></i><i></i><i></i></div><span class="unit-status"></span></div>
+          <div class="rack-bottom"><span>CPU <b>24%</b></span><span>MEM <b>61%</b></span><span>UPTIME <b>99.9%</b></span></div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon">⌘</span><span><b>System status</b><small>All services operational</small></span><span class="mini-check">✓</span></div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon">⛨</span><span><b>Security</b><small>Monitoring enabled</small></span></div>
+        <div class="visual-caption"><span class="status-dot"></span> MONITOR · MAINTAIN · PROTECT</div>
+      </div>
+      <div class="hero-footer"><span>01 / INTRODUCTION</span><span>RELIABILITY IS A TEAM EFFORT</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="strip-label">WHAT IS SYSTEM ADMINISTRATION?</div>
+      <p>System administration is the practice of <strong>setting up, managing, securing, and maintaining</strong> computers, servers, networks, and services so users can work reliably.</p>
+    </section>
+
+    <section class="section content-section" id="roles">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / THE DAY-TO-DAY</p><h2>Roles &amp; <span class="accent">responsibilities</span></h2></div>
+        <p class="section-intro">A System Administrator helps keep an organization's IT environment available, organized, and secure.</p>
+      </div>
+      <div class="responsibility-grid">
+        <article class="info-card"><div class="card-top"><span class="card-icon">01</span><span class="line-icon">▤</span></div><h3>Install &amp; maintain systems</h3><p>Install operating systems, apply updates, configure services, and keep computers and servers working properly.</p><span class="card-tag">SYSTEMS</span></article>
+        <article class="info-card"><div class="card-top"><span class="card-icon">02</span><span class="line-icon">♙</span></div><h3>Manage users &amp; access</h3><p>Create and manage accounts, assign permissions, and make sure users can access only what they need.</p><span class="card-tag">ACCESS CONTROL</span></article>
+        <article class="info-card"><div class="card-top"><span class="card-icon">03</span><span class="line-icon">⌁</span></div><h3>Monitor performance</h3><p>Check system health, resource usage, logs, and alerts to find problems before they cause major downtime.</p><span class="card-tag">MONITORING</span></article>
+        <article class="info-card"><div class="card-top"><span class="card-icon">04</span><span class="line-icon">⟲</span></div><h3>Back up &amp; recover data</h3><p>Schedule backups, test recovery procedures, and help restore important files and services after an issue.</p><span class="card-tag">CONTINUITY</span></article>
+        <article class="info-card"><div class="card-top"><span class="card-icon">05</span><span class="line-icon">⌕</span></div><h3>Troubleshoot issues</h3><p>Investigate hardware, software, and connectivity problems, identify their causes, and document the fix.</p><span class="card-tag">SUPPORT</span></article>
+        <article class="info-card"><div class="card-top"><span class="card-icon">06</span><span class="line-icon">⛨</span></div><h3>Protect the environment</h3><p>Apply security updates, review access, follow safe configuration practices, and respond to security alerts.</p><span class="card-tag">SECURITY</span></article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / WHAT YOU NEED TO KNOW</p><h2>Skills for the <span class="accent">job</span></h2></div>
+        <p class="section-intro">Good administrators combine practical technical knowledge with careful communication and decision-making.</p>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-list">
+          <div class="skill-row"><span class="skill-number">01</span><div><h3>Operating system administration</h3><p>Install, configure, update, and maintain Windows and Linux systems.</p></div><span class="skill-type">TECHNICAL</span></div>
+          <div class="skill-row"><span class="skill-number">02</span><div><h3>Networking fundamentals</h3><p>Understand IP addresses, DNS, DHCP, routing, and basic connectivity checks.</p></div><span class="skill-type">TECHNICAL</span></div>
+          <div class="skill-row"><span class="skill-number">03</span><div><h3>Scripting &amp; automation</h3><p>Use scripts to reduce repetitive tasks and make routine work consistent.</p></div><span class="skill-type">TECHNICAL</span></div>
+          <div class="skill-row"><span class="skill-number">04</span><div><h3>Problem-solving</h3><p>Break a problem into steps, check evidence, and test possible solutions carefully.</p></div><span class="skill-type">PROFESSIONAL</span></div>
+          <div class="skill-row"><span class="skill-number">05</span><div><h3>Communication &amp; teamwork</h3><p>Explain technical issues clearly, support users respectfully, and share useful updates.</p></div><span class="skill-type">PROFESSIONAL</span></div>
+          <div class="skill-row"><span class="skill-number">06</span><div><h3>Documentation &amp; time management</h3><p>Record changes and solutions, prioritize tasks, and follow maintenance schedules.</p></div><span class="skill-type">PROFESSIONAL</span></div>
+        </div>
+        <aside class="quote-panel">
+          <div class="quote-symbol">“</div>
+          <p class="quote-text">A reliable system is built through preparation, monitoring, and continuous learning.</p>
+          <div class="quote-divider"></div>
+          <p class="quote-label">THE ADMIN MINDSET</p>
+          <div class="mini-terminal"><span>$</span> learn · test · document<span class="cursor-small"></span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section content-section" id="tools">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / THE TOOLKIT</p><h2>Tools of the <span class="accent">trade</span></h2></div>
+        <p class="section-intro">These tools help administrators manage systems, connect securely, automate tasks, and test configurations.</p>
+      </div>
+      <div class="tools-grid">
+        <article class="tool-card"><div class="tool-logo windows-logo">▦</div><div class="tool-meta"><span>OPERATING SYSTEM</span><span class="tool-index">TOOL_01</span></div><h3>Windows Server</h3><p>A server operating system used for services such as user and device management, file sharing, and network resources.</p><a href="https://learn.microsoft.com/windows-server/" target="_blank" rel="noopener noreferrer">Official documentation ↗</a></article>
+        <article class="tool-card"><div class="tool-logo ubuntu-logo">◉</div><div class="tool-meta"><span>OPERATING SYSTEM</span><span class="tool-index">TOOL_02</span></div><h3>Ubuntu Server</h3><p>A Linux server platform commonly used to host applications, web services, and other networked workloads.</p><a href="https://ubuntu.com/server/docs" target="_blank" rel="noopener noreferrer">Official documentation ↗</a></article>
+        <article class="tool-card"><div class="tool-logo powershell-logo">&gt;_</div><div class="tool-meta"><span>COMMAND LINE</span><span class="tool-index">TOOL_03</span></div><h3>PowerShell</h3><p>A command-line shell and scripting language for managing Windows systems and automating administrative tasks.</p><a href="https://learn.microsoft.com/powershell/" target="_blank" rel="noopener noreferrer">Official documentation ↗</a></article>
+        <article class="tool-card"><div class="tool-logo ssh-logo">⌁</div><div class="tool-meta"><span>REMOTE ACCESS</span><span class="tool-index">TOOL_04</span></div><h3>SSH</h3><p>A protocol used to securely connect to and manage remote computers over an untrusted network.</p><a href="https://www.openssh.com/manual.html" target="_blank" rel="noopener noreferrer">Official documentation ↗</a></article>
+        <article class="tool-card"><div class="tool-logo virtualbox-logo">◇</div><div class="tool-meta"><span>VIRTUALIZATION</span><span class="tool-index">TOOL_05</span></div><h3>VirtualBox</h3><p>A virtualization application that lets users run virtual machines for practice, testing, and learning in an isolated environment.</p><a href="https://www.virtualbox.org/manual/" target="_blank" rel="noopener noreferrer">Official documentation ↗</a></article>
+        <article class="tool-card"><div class="tool-logo monitoring-logo">▥</div><div class="tool-meta"><span>MONITORING</span><span class="tool-index">TOOL_06</span></div><h3>Task Manager / top</h3><p>Built-in utilities that help inspect running processes and resource use such as CPU, memory, and system load.</p><span class="tool-note">BUILT-IN UTILITIES</span></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section about-inner">
+        <div class="about-terminal">
+          <div class="terminal-top"><span></span><span></span><span></span><small>developer_profile.txt</small></div>
+          <div class="about-code">
+            <p><span class="code-muted">01</span> <span class="code-key">name</span> <span class="code-symbol">=</span> <span class="code-value">"Jeff Aldrin Catapang"</span></p>
+            <p><span class="code-muted">02</span> <span class="code-key">course</span> <span class="code-symbol">=</span> <span class="code-value">"BSIT"</span></p>
+            <p><span class="code-muted">03</span> <span class="code-key">interest</span> <span class="code-symbol">=</span> <span class="code-value">"IT &amp; System Administration"</span></p>
+            <p><span class="code-muted">04</span> <span class="code-key">status</span> <span class="code-symbol">=</span> <span class="code-value">"Always learning"</span></p>
+            <p class="code-comment"># Building skills one command at a time.</p>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">04 / ABOUT THE DEVELOPER</p>
+          <h2>Curious about how<br>technology <span class="accent">works.</span></h2>
+          <p>Hello! I am a student interested in learning how computer systems, networks, and IT services work together. This portfolio was created to introduce the System Administrator profession and summarize the responsibilities, skills, and tools used in this field.</p>
+          <p>My goal is to keep improving my technical knowledge, practice solving real-world problems, and explore future opportunities in the IT industry.</p>
+          <div class="about-chips"><span>IT STUDENT</span><span>TECH ENTHUSIAST</span><span>FUTURE LEARNER</span></div>
+          <p class="edit-note">Remember to replace the sample name and course in the profile panel with your own details.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">$_</span><span>sysadmin<span class="brand-muted">.portfolio</span></span></a>
+    <p>Student Career Portfolio <span class="footer-separator">/</span> Systems Administration &amp; Maintenance</p>
+    <a class="back-top" href="#home">BACK TO TOP ↑</a>
+    <div class="copyright">© <span id="year"></span> · Created for educational purposes</div>
+  </footer>
+</body>
+</html>
